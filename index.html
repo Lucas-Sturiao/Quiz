@@ -5,15 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um quiz interativo para programadores">
-    <style>
-        h1 {
-            color: red;
-            font-size: 50px;
-        }
-        p {
-            color: aqua;
-        }
-    </style>
+    <link rel="stylesheet" href="style-index.css">
     <title>Quiz para programadores</title>
 </head>
 
@@ -170,19 +162,20 @@
                 <fieldset>
                     <legend>Informações de contato</legend>
                     <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name"><br>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome"><br>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email"><br>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail"><br>
                     <label for="comments">Comentários:</label><br>
                     <textarea name="comments" id="comments" rows="4" cols="50"
-                        placeholder="Digite seus comentários aqui!"></textarea>
+                        placeholder="Digite seus comentários aqui!"></textarea><br>
+                    <button onclick="alert('Feedback enviado')">Enviar Feedback</button>
                 </fieldset>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy Quiz de programadores. Todos os direitos reservados.</p>
-        <p>Para conhecer mais sobre mim, <a href="sobremim.html" target="_blank">clique aqui</a></p>
+        <p class="paragrafo-footer">&copy Quiz de programadores. Todos os direitos reservados.</p>
+        <p class="paragrafo-footer">Para conhecer mais sobre mim, <a href="sobremim.html" target="_blank">clique aqui</a></p>
     </footer>
 </body>
 
